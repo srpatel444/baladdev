@@ -1,0 +1,6 @@
+{
+  "name": "BaladDev Book Stall",
+  "description": "Comprehensive e-commerce platform for BaladDev Book Stall featuring stationery, books, school/office supplies, shop filter, product details, cart, checkout, user authentication, profile dashboard, coupons, multi-language support (EN, HI, GU), dark mode, and full admin management dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

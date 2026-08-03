@@ -1,0 +1,65 @@
+{
+  "entities": {
+    "products": {
+      "title": "products",
+      "description": "Store catalog products",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "brand": { "type": "string" },
+        "category": { "type": "string" },
+        "price": { "type": "number" },
+        "originalPrice": { "type": "number" },
+        "rating": { "type": "number" },
+        "reviewsCount": { "type": "number" },
+        "inStock": { "type": "boolean" },
+        "stockQuantity": { "type": "number" },
+        "description": { "type": "string" },
+        "images": { "type": "array", "items": { "type": "string" } },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "isBestSeller": { "type": "boolean" },
+        "isNewArrival": { "type": "boolean" },
+        "isFeatured": { "type": "boolean" }
+      },
+      "required": ["id", "name", "price", "category"]
+    },
+    "orders": {
+      "title": "orders",
+      "description": "Store customer orders",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "customerName": { "type": "string" },
+        "customerEmail": { "type": "string" },
+        "customerPhone": { "type": "string" },
+        "total": { "type": "number" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "total", "status"]
+    },
+    "coupons": {
+      "title": "coupons",
+      "description": "Discount coupons",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "code": { "type": "string" },
+        "type": { "type": "string" },
+        "value": { "type": "number" }
+      },
+      "required": ["id", "code", "type", "value"]
+    },
+    "store_settings": {
+      "title": "store_settings",
+      "description": "Store profile and payment configuration",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "profile": { "type": "object" },
+        "paymentDetails": { "type": "object" }
+      }
+    }
+  }
+}
